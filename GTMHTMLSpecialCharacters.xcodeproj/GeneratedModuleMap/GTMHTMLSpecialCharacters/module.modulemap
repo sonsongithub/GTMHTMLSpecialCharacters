@@ -1,5 +1,0 @@
-module GTMHTMLSpecialCharacters {
-    umbrella "GTMHTMLSpecialCharacters.h"
-    link "GTMHTMLSpecialCharacters"
-    export *
-}

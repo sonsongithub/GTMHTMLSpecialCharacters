@@ -1,5 +1,5 @@
 module GTMHTMLSpecialCharacters {
-    umbrella header "GTMNSString+HTML.h"
+    umbrella "../include/"
     link "GTMHTMLSpecialCharacters"
     export *
 }

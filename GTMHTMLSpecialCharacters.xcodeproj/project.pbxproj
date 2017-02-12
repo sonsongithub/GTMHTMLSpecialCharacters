@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		141A6F0C1E510B7500E2C27F /* PBXContainerItemProxy */ = {
+		141A6F0E1E5112A000E2C27F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -223,7 +223,7 @@
 		OBJ_37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_21 /* GTMHTMLSpecialCharacters */;
-			targetProxy = 141A6F0C1E510B7500E2C27F /* PBXContainerItemProxy */;
+			targetProxy = 141A6F0E1E5112A000E2C27F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

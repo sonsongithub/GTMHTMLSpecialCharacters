@@ -15,4 +15,5 @@ FOUNDATION_EXPORT double GTMHTMLSpecialCharactersVersionNumber;
 FOUNDATION_EXPORT const unsigned char GTMHTMLSpecialCharactersVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <UnescapeHTMLSpecialChars/PublicHeader.h>
-#import <GTMHTMLSpecialCharacters/GTMNSString+HTML.h>
+#import "GTMDefines.h"
+#import "GTMNSString+HTML.h"
