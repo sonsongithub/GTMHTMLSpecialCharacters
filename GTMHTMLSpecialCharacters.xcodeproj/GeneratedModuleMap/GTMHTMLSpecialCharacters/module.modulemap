@@ -1,0 +1,5 @@
+module GTMHTMLSpecialCharacters {
+    umbrella "/Users/sonson/code/GTMHTMLSpecialCharacters/Sources/GTMHTMLSpecialCharacters/include"
+    link "GTMHTMLSpecialCharacters"
+    export *
+}

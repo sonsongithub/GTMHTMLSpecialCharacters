@@ -1,5 +1,0 @@
-module GTMHTMLSpecialCharacters {
-    umbrella "../include/"
-    link "GTMHTMLSpecialCharacters"
-    export *
-}

@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		141A6F0E1E5112A000E2C27F /* PBXContainerItemProxy */ = {
+		1436ADF01E51421B00399707 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -26,7 +26,7 @@
 		OBJ_10 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		OBJ_12 /* GTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		OBJ_13 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		OBJ_14 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/sonson/code/GTMHTMLSpecialCharacters/Sources/GTMHTMLSpecialCharacters/include/module.modulemap; sourceTree = "<group>"; };
+		OBJ_14 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/sonson/code/GTMHTMLSpecialCharacters/GTMHTMLSpecialCharacters.xcodeproj/GeneratedModuleMap/GTMHTMLSpecialCharacters/module.modulemap; sourceTree = "<group>"; };
 		OBJ_17 /* GTMHTMLSpecialCharactersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTMHTMLSpecialCharactersTests.swift; sourceTree = "<group>"; };
 		OBJ_19 /* GTMHTMLSpecialCharacters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMHTMLSpecialCharacters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_20 /* GTMHTMLSpecialCharactersTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GTMHTMLSpecialCharactersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,7 +223,7 @@
 		OBJ_37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_21 /* GTMHTMLSpecialCharacters */;
-			targetProxy = 141A6F0E1E5112A000E2C27F /* PBXContainerItemProxy */;
+			targetProxy = 1436ADF01E51421B00399707 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -243,7 +243,7 @@
 				);
 				INFOPLIST_FILE = GTMHTMLSpecialCharacters.xcodeproj/GTMHTMLSpecialCharacters_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MODULEMAP_FILE = Sources/GTMHTMLSpecialCharacters/include/module.modulemap;
+				MODULEMAP_FILE = GTMHTMLSpecialCharacters.xcodeproj/GeneratedModuleMap/GTMHTMLSpecialCharacters/module.modulemap;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = GTMHTMLSpecialCharacters;
@@ -268,7 +268,7 @@
 				);
 				INFOPLIST_FILE = GTMHTMLSpecialCharacters.xcodeproj/GTMHTMLSpecialCharacters_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MODULEMAP_FILE = Sources/GTMHTMLSpecialCharacters/include/module.modulemap;
+				MODULEMAP_FILE = GTMHTMLSpecialCharacters.xcodeproj/GeneratedModuleMap/GTMHTMLSpecialCharacters/module.modulemap;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = GTMHTMLSpecialCharacters;
