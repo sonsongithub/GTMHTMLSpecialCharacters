@@ -15,7 +15,7 @@ class GTMHTMLSpecialCharactersTests: XCTestCase {
     func testEscapePerformance() {
         self.measure {
             for _ in 0..<self.testCount {
-                let _ = self.stringToBeUnescaped.gtm_stringByUnescapingFromHTML()
+                let _ = self.stringToBeEscaped.gtm_stringByUnescapingFromHTML()
             }
         }
     }
@@ -23,7 +23,7 @@ class GTMHTMLSpecialCharactersTests: XCTestCase {
     func testUnescapePerformance() {
         self.measure {
             for _ in 0..<self.testCount {
-                let _ = self.stringToBeEscaped.gtm_stringByEscapingForHTML()
+                let _ = self.stringToBeUnescaped.gtm_stringByEscapingForHTML()
             }
         }
     }
