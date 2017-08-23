@@ -517,6 +517,45 @@ static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
   return finalString;
 } // gtm_stringByUnescapingHTML
 
-
+- (nonnull NSString*)stringByEliminatingHTMLTag {
+    int i = 0;
+    
+    NSMutableString* str = [NSMutableString string];
+    
+    UniChar *p = (UniChar*)CFStringGetCharactersPtr((CFStringRef)self);
+    NSInteger length = [self length];
+    
+    BOOL isCopied = NO;
+    if (p == NULL) {
+        p = (UniChar*)malloc(sizeof(UniChar) * length);
+        if (p != NULL) {
+            [self getCharacters:p];
+            isCopied = YES;
+        }
+    }
+    
+    if (p == NULL)
+        return [NSMutableString stringWithString:self];
+    
+    BOOL addFlag = YES;
+    
+    for(i = 0; i< ([self length]); i++) {
+        
+        if (*(p + i) == '<') {
+            addFlag = NO;
+        }
+        else if (*(p + i) == '>') {
+            addFlag = YES;
+        }
+        else if (addFlag) {
+            CFStringAppendCharacters((CFMutableStringRef)str, p+i, 1);
+        }
+    }
+    
+    if (isCopied)
+        free(p);
+    
+    return (NSString*)str;
+}
 
 @end

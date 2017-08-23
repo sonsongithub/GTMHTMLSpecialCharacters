@@ -27,7 +27,31 @@ class GTMHTMLSpecialCharactersTests: XCTestCase {
             }
         }
     }
+    
+    func testRemovingHTMLTags_short() {
+        self.measure {
+            for _ in 0..<10000 {
+                _ = "<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu".eliminatingHTMLTag()
+            }
+        }
+    }
+    
+    func testRemovingHTMLTags_medium() {
+        self.measure {
+            for _ in 0..<10000 {
+                _ = "<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu".eliminatingHTMLTag()
+            }
+        }
+    }
 
+    func testRemovingHTMLTags_long() {
+        self.measure {
+            for _ in 0..<10000 {
+                _ = "<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu<dh><>af<<<>hdsaihfiufhdsjkhfeifhhfifhiu".eliminatingHTMLTag()
+            }
+        }
+    }
+    
     static var allTests : [(String, (GTMHTMLSpecialCharactersTests) -> () throws -> Void)] {
         return [
             ("testStringRoundtrippingEscapedHTML", testStringRoundtrippingEscapedHTML),

@@ -63,4 +63,6 @@
 //
 - (NSString *)gtm_stringByUnescapingFromHTML;
 
+- (nonnull NSString*)stringByEliminatingHTMLTag;
+
 @end
